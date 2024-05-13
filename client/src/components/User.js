@@ -17,7 +17,7 @@ const User = () => {
     const getuserdet = async (employee_id) => {
       try {
         const det = await fetch(
-          `https://13.232.33.62:9000/user/empdet/${employee_id}`
+          `http://52.66.214.26:9000/user/empdet/${employee_id}`
         );
         const data = await det.json();
         console.log(data);
@@ -37,7 +37,7 @@ const User = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://13.232.33.62:9000/user/empdet", {
+      const response = await fetch("http://52.66.214.26:9000/user/empdet", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

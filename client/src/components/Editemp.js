@@ -18,7 +18,7 @@ const Editemp = ({ emp }) => {
         phone_number: ph,
       };
       const response = await fetch(
-        `http://13.232.33.62:9000/user/updateemp/${emp.employee_id}`,
+        `http://52.66.214.26:9000/user/updateemp/${emp.employee_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -44,7 +44,7 @@ const Editemp = ({ emp }) => {
         phone_number: ph,
       };
       const update = await fetch(
-        `http://13.232.33.62:9000/user/updateemp/${emp.employee_id}`,
+        `http://52.66.214.26/:9000/user/updateemp/${emp.employee_id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
